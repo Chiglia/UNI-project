@@ -1,0 +1,9 @@
+<div>
+  <p>{{ questions[currentIndex] }}</p>
+  <button
+    (click)="nextQuestion()"
+    [disabled]="currentIndex >= questions.length - 1"
+  >
+    Prossima domanda
+  </button>
+</div>
